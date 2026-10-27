@@ -28,8 +28,8 @@ The goal of this lab is to set up a reproducible, pinned Python environment and 
 Notes:
 - ConvergenceWarning: LogisticRegression raised a ConvergenceWarning. The features are not scaled, so the lbfgs solver converges slowly. Even with max_iter=1000 (the default is 100), the fitted model reports n_iter_ = 1000, which means it hit the iteration limit without fully converging. I kept the lab's required configuration and did not add a scaler. The test accuracy is still good (0.9415), but the coefficients are probably not at the exact optimum. Scaling the features (e.g. StandardScaler) would likely fix the warning.
 - RSS is high (~227 MB) because it measures the whole Python process, not just the model. The interpreter, NumPy, SciPy, scikit-learn and the other imported libraries take up almost all of that memory. The models themselves are tiny (1 KB and 284 KB), so the RSS delta during training and inference is only 0.0–0.1 MB, and the two models differ by only ~1.5 MB.
-- Latency was measured on my own laptop (Windows 10): [write your CPU and RAM here], running a single Python process. The absolute numbers would be different on a phone or a microcontroller, so they should be read as relative comparisons.
-
+- Latency was measured on my own laptop (Windows 10):11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, running a single Python process. The absolute numbers would be different on a phone or a microcontroller, so they should be read as relative comparisons.
+"
 ### Deployment fit
 
 | Target | LogisticRegression | RandomForest |
