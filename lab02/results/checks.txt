@@ -1,0 +1,29 @@
+Train: (1257, 64), Test: (540, 64), labels one-hot: (1257, 10)
+
+=== W = 16 ===
+  W1: shape (64, 16)
+  b1: shape (16,)
+  W2: shape (16, 16)
+  b2: shape (16,)
+  W3: shape (16, 10)
+  b3: shape (10,)
+  total parameters: 1482
+  output shape: (32, 10) (expected (32, 10))
+  max |row sum - 1|: 2.22e-16 (must be < 1e-6)
+  untrained loss: 2.3026 (ln(10) = 2.3026)
+  gradient check at the specified init: 7/10 weights pass
+  gradient check at std 0.1:            10/10 weights pass
+
+=== W = 64 ===
+  W1: shape (64, 64)
+  b1: shape (64,)
+  W2: shape (64, 64)
+  b2: shape (64,)
+  W3: shape (64, 10)
+  b3: shape (10,)
+  total parameters: 8970
+  output shape: (32, 10) (expected (32, 10))
+  max |row sum - 1|: 3.33e-16 (must be < 1e-6)
+  untrained loss: 2.3026 (ln(10) = 2.3026)
+  gradient check at the specified init: 8/10 weights pass
+  gradient check at std 0.1:            10/10 weights pass
