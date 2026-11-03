@@ -1,0 +1,7 @@
+model,batch,runs,threads,median_ms
+MLP,1,100,4,0.0947
+MLP,128,20,4,0.6378
+CNN,1,100,4,0.2684
+CNN,128,20,4,13.0767
+Attention,1,100,4,0.6958
+Attention,128,20,4,12.9748

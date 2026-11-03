@@ -1,0 +1,4 @@
+model,params
+MLP,235146
+CNN,20490
+Attention,70794

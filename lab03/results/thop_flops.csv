@@ -1,0 +1,7 @@
+scope,item,thop_macs,thop_macs_times_2
+whole model,MLP,234752,469504
+whole model,CNN,1031744,2063488
+whole model,Attention,591488,1182976
+single layer,MLP Linear 784->256,200704,401408
+single layer,CNN Conv2d 16->32 (input 14x14),903168,1806336
+single layer,Attention QKV projection (seq 16),196608,393216
